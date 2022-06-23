@@ -1,1 +1,0 @@
-# Philip Meyer Max for Live Tutorials
