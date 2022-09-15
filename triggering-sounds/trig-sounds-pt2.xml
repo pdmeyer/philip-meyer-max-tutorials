@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<pattrstorage name = "trig-sounds-pt2">
+	<slot number = "1">
+		<pattr name = "note-duration" value = "100" />
+		<pattr name = "note-offset" value = "48" />
+		<pattr name = "notes" value = "17 6 8 6 11 15 14 12" />
+		<pattr name = "parameter" value = "1" />
+		<pattr name = "plugin" value = "&quot;Chromaphone 3&quot;" />
+		<pattr name = "tempo" value = "tempo 120." />
+		<pattr name = "timbre" value = "0 19 70 99 116 127 19 86" />
+		<pattr name = "velocity" value = "55 76 69 50 40 42 44 67" />
+		<pattr name = "vst~" value = "(dictionary)" />
+	</slot>
+	<slot number = "2">
+		<pattr name = "note-duration" value = "100" />
+		<pattr name = "note-offset" value = "48" />
+		<pattr name = "notes" value = "17 6 8 6 11 15 14 12" />
+		<pattr name = "parameter" value = "1" />
+		<pattr name = "plugin" value = "&quot;Chromaphone 3&quot;" />
+		<pattr name = "tempo" value = "tempo 120." />
+		<pattr name = "timbre" value = "0 19 2 24 23 19 19 86" />
+		<pattr name = "velocity" value = "55 76 118 50 101 106 44 67" />
+		<pattr name = "vst~" value = "(dictionary)" />
+	</slot>
+</pattrstorage>
+
