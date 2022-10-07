@@ -1,0 +1,83 @@
+{
+	"pattrstorage" : 	{
+		"name" : "mc-eucl",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"note-range" : [ "setminmax", 40.0, 52.0 ],
+					"subdivisions" : [ 14 ],
+					"polymode" : [ 0 ],
+					"generator.1::steps" : [ 21 ],
+					"generator.1::events" : [ 9 ],
+					"generator.1::rotation" : [ 0 ],
+					"generator.2::steps" : [ 9 ],
+					"generator.2::events" : [ 7 ],
+					"generator.2::rotation" : [ 0 ],
+					"generator.3::steps" : [ 0 ],
+					"generator.3::events" : [ 0 ],
+					"generator.3::rotation" : [ 0 ],
+					"generator.4::steps" : [ 0 ],
+					"generator.4::events" : [ 0 ],
+					"generator.4::rotation" : [ 0 ],
+					"generator.5::steps" : [ 0 ],
+					"generator.5::events" : [ 0 ],
+					"generator.5::rotation" : [ 0 ],
+					"generator.6::steps" : [ 0 ],
+					"generator.6::events" : [ 0 ],
+					"generator.6::rotation" : [ 0 ],
+					"generator.7::steps" : [ 0 ],
+					"generator.7::events" : [ 0 ],
+					"generator.7::rotation" : [ 0 ],
+					"generator.8::steps" : [ 0 ],
+					"generator.8::events" : [ 0 ],
+					"generator.8::rotation" : [ 0 ],
+					"notes" : [ 41, 43, 44, 45, 46, 47, 48, 49 ],
+					"midichannel" : [  ],
+					"mididevice" : [  ]
+				}
+
+			}
+,
+			"2" : 			{
+				"id" : 2,
+				"data" : 				{
+					"note-range" : [ "setminmax", 60.0, 72.0 ],
+					"subdivisions" : [ 14 ],
+					"polymode" : [ 0 ],
+					"generator.1::steps" : [ 21 ],
+					"generator.1::events" : [ 9 ],
+					"generator.1::rotation" : [ 0 ],
+					"generator.2::steps" : [ 9 ],
+					"generator.2::events" : [ 7 ],
+					"generator.2::rotation" : [ 0 ],
+					"generator.3::steps" : [ 0 ],
+					"generator.3::events" : [ 0 ],
+					"generator.3::rotation" : [ 0 ],
+					"generator.4::steps" : [ 0 ],
+					"generator.4::events" : [ 0 ],
+					"generator.4::rotation" : [ 0 ],
+					"generator.5::steps" : [ 0 ],
+					"generator.5::events" : [ 0 ],
+					"generator.5::rotation" : [ 0 ],
+					"generator.6::steps" : [ 0 ],
+					"generator.6::events" : [ 0 ],
+					"generator.6::rotation" : [ 0 ],
+					"generator.7::steps" : [ 0 ],
+					"generator.7::events" : [ 0 ],
+					"generator.7::rotation" : [ 0 ],
+					"generator.8::steps" : [ 0 ],
+					"generator.8::events" : [ 0 ],
+					"generator.8::rotation" : [ 0 ],
+					"notes" : [ 61, 62, 63, 64, 65, 67, 69, 70 ],
+					"midichannel" : [  ],
+					"mididevice" : [  ]
+				}
+
+			}
+
+		}
+
+	}
+
+}
