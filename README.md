@@ -1,1 +1,2 @@
-# Philip Meyer Max for Live Tutorials
+# Philip Meyer's Max Tutorials
+https://www.youtube.com/channel/UCvBA1sS2Y7BznhUNn8pWQ9A
