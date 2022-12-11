@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--If you edit this file, please place it in a safe place since future exports will overwrite this automatically generated reference file.-->
+<c74object name="euclidean~">
+<metadatalist>
+<metadata name="author">philip</metadata>
+<metadata name="tag">audio</metadata>
+</metadatalist>
+<methodlist>
+<method name="message"><digest>message input</digest><description>message input</description></method>
+</methodlist>
+<attributelist>
+<attribute name="poly-mode" get="1" set="1" size="1" type="float64">
+<digest>poly-mode</digest>
+</attribute>
+<attribute name="subdiv" get="1" set="1" size="1" type="float64">
+<digest>subdiv</digest>
+</attribute>
+<attribute name="steps" get="1" set="1" size="1" type="float64">
+<digest>steps</digest>
+</attribute>
+<attribute name="events" get="1" set="1" size="1" type="float64">
+<digest>events</digest>
+</attribute>
+<attribute name="rotate" get="1" set="1" size="1" type="float64">
+<digest>rotate</digest>
+</attribute>
+</attributelist>
+</c74object>
