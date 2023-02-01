@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -4.0, 87.0, 1334.0, 779.0 ],
+		"rect" : [ 41.0, 87.0, 1334.0, 779.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -86,8 +86,7 @@
 						"envelope" : [ 1000.0, 0.0, 1.0, 0.0, 0.0, 1, 0.0, 26.595744680851062, 1.0, 0, -0.545, 1000.0, 0.0, 1, -0.45, "curve" ],
 						"fmmoddepth" : [ 0.07 ],
 						"fmmodratio" : [ 0.75 ],
-						"gate" : [ 1, 2, 1, 1, 1, 2, 2, 1 ],
-						"live.gain~" : [ -5.854286245217736 ],
+						"gate" : [ 1, 2, 1, 2, 1, 2, 2, 2 ],
 						"pitches" : [ 5, 7, 0, 3, 4, 7, 6, 6 ],
 						"pitchoffset" : [ 60 ],
 						"pulsecounts" : [ 6, 6, 4, 2, 2, 2, 3, 5 ],
@@ -629,7 +628,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 397.000005602836609, 495.282608695652186, 29.5, 22.0 ],
+					"patching_rect" : [ 397.000005602836609, 516.282608695652243, 29.5, 22.0 ],
 					"text" : "*~"
 				}
 
@@ -643,7 +642,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 407.500005602836609, 465.282608695652186, 50.0, 22.0 ],
+					"patching_rect" : [ 407.500005602836609, 486.282608695652186, 50.0, 22.0 ],
 					"varname" : "fmmodratio"
 				}
 
@@ -655,7 +654,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 353.500005602836609, 460.282608695652186, 39.0, 22.0 ],
+					"patching_rect" : [ 353.500005602836609, 481.282608695652186, 39.0, 22.0 ],
 					"text" : "mtof~"
 				}
 
@@ -723,8 +722,7 @@
 
 					}
 ,
-					"showname" : 0,
-					"varname" : "live.gain~"
+					"showname" : 0
 				}
 
 			}
@@ -736,7 +734,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 407.500005602836609, 442.282608695652186, 46.0, 21.0 ],
+					"patching_rect" : [ 407.500005602836609, 463.282608695652186, 46.0, 21.0 ],
 					"text" : "ratio"
 				}
 
@@ -752,7 +750,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 288.16666853427887, 465.282608695652186, 50.0, 23.0 ],
+					"patching_rect" : [ 288.16666853427887, 486.282608695652186, 50.0, 23.0 ],
 					"varname" : "fmmoddepth"
 				}
 
@@ -766,7 +764,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 288.16666853427887, 495.282608695652186, 57.0, 23.0 ],
+					"patching_rect" : [ 288.16666853427887, 516.282608695652243, 57.0, 23.0 ],
 					"text" : "depth $1"
 				}
 
@@ -2294,6 +2292,10 @@
 			}
 , 			{
 				"box" : 				{
+					"active" : 					{
+						"live.gain~" : 0
+					}
+,
 					"autorestore" : "metropolis-presets.json",
 					"id" : "obj-20",
 					"maxclass" : "newobj",
