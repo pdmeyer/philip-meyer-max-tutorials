@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 17.0, 164.0, 829.0, 779.0 ],
+		"rect" : [ -4.0, 87.0, 1334.0, 779.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -45,7 +45,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 781.0, 366.0, 61.0, 22.0 ],
+					"patching_rect" : [ 782.0, 205.717391304347757, 61.0, 22.0 ],
 					"text" : "pipe 1000"
 				}
 
@@ -57,7 +57,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 781.0, 338.282608695652186, 22.0, 22.0 ],
+					"patching_rect" : [ 782.0, 177.999999999999943, 22.0, 22.0 ],
 					"text" : "t 1"
 				}
 
@@ -69,7 +69,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 858.0, 250.282608695652243, 89.0, 22.0 ],
+					"patching_rect" : [ 859.0, 90.0, 89.0, 22.0 ],
 					"text" : "storagewindow"
 				}
 
@@ -81,13 +81,16 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 844.0, 309.282608695652243, 56.0, 22.0 ],
+					"patching_rect" : [ 845.0, 149.0, 56.0, 22.0 ],
 					"restore" : 					{
 						"envelope" : [ 1000.0, 0.0, 1.0, 0.0, 0.0, 1, 0.0, 26.595744680851062, 1.0, 0, -0.545, 1000.0, 0.0, 1, -0.45, "curve" ],
 						"fmmoddepth" : [ 0.07 ],
 						"fmmodratio" : [ 0.75 ],
-						"live.gain~" : [ -21.216295746096264 ],
+						"gate" : [ 1, 2, 1, 1, 1, 2, 2, 1 ],
+						"live.gain~" : [ -5.854286245217736 ],
+						"pitches" : [ 5, 7, 0, 3, 4, 7, 6, 6 ],
 						"pitchoffset" : [ 60 ],
+						"pulsecounts" : [ 6, 6, 4, 2, 2, 2, 3, 5 ],
 						"subdiv" : [ 16 ]
 					}
 ,
@@ -161,7 +164,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "bang", "bang", "" ],
-					"patching_rect" : [ 749.0, 309.282608695652243, 83.0, 22.0 ],
+					"patching_rect" : [ 750.0, 149.0, 83.0, 22.0 ],
 					"text" : "sel recall read"
 				}
 
@@ -177,7 +180,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 743.0, 478.043478260869506, 40.0, 69.91304347826086 ],
+					"patching_rect" : [ 743.0, 366.0, 40.0, 69.91304347826086 ],
 					"pic" : "/var/folders/t0/v_x8c8n171x70g49_z285p1c0000gn/T/TemporaryItems/NSIRD_screencaptureui_bi4nCW/Screen Shot 2023-01-31 at 2.37.05 PM.png"
 				}
 
@@ -217,7 +220,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 506.0, 338.282608695652186, 150.0, 20.0 ],
-					"text" : "modes"
+					"text" : "gate modes"
 				}
 
 			}
@@ -232,7 +235,8 @@
 					"patching_rect" : [ 506.0, 356.282608695652186, 235.0, 88.0 ],
 					"setminmax" : [ 0.0, 3.0 ],
 					"settype" : 0,
-					"size" : 8
+					"size" : 8,
+					"varname" : "gate"
 				}
 
 			}
@@ -1305,7 +1309,8 @@
 					"patching_rect" : [ 506.0, 217.282608695652243, 235.0, 88.0 ],
 					"setminmax" : [ 0.0, 11.0 ],
 					"settype" : 0,
-					"size" : 8
+					"size" : 8,
+					"varname" : "pitches"
 				}
 
 			}
@@ -1547,7 +1552,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 575.0, 176.282608695652186, 109.0, 22.0 ],
-					"text" : "3 5 2 4 3 4 5 6"
+					"text" : "6 6 4 2 2 2 3 5"
 				}
 
 			}
@@ -1562,7 +1567,8 @@
 					"patching_rect" : [ 506.0, 78.282608695652186, 235.0, 88.0 ],
 					"setminmax" : [ 1.0, 8.0 ],
 					"settype" : 0,
-					"size" : 8
+					"size" : 8,
+					"varname" : "pulsecounts"
 				}
 
 			}
@@ -2281,7 +2287,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "preset", "int", "preset", "int", "" ],
-					"patching_rect" : [ 749.0, 241.282608695652243, 100.0, 40.0 ],
+					"patching_rect" : [ 750.0, 81.0, 100.0, 40.0 ],
 					"pattrstorage" : "metropolis-presets"
 				}
 
@@ -2294,7 +2300,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 749.0, 283.282608695652243, 255.0, 22.0 ],
+					"patching_rect" : [ 750.0, 123.0, 255.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"client_rect" : [ 734, 91, 1117, 453 ],
 						"parameter_enable" : 0,
@@ -2371,12 +2377,12 @@
 				"box" : 				{
 					"hidden" : 1,
 					"id" : "obj-3",
-					"linecount" : 6,
+					"linecount" : 4,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 743.0, 78.282608695652186, 139.0, 89.0 ],
+					"patching_rect" : [ 658.0, 11.666665256023407, 327.0, 62.0 ],
 					"text" : ";\rmax launchbrowser https://intellijel.com/downloads/manuals/metropolis_manual_1.30_2020.05.12.pdf"
 				}
 
@@ -2538,7 +2544,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-22", 0 ],
-					"midpoints" : [ 790.5, 396.282608695652186, 744.5, 396.282608695652186, 744.5, 230.282608695652243, 758.5, 230.282608695652243 ],
+					"midpoints" : [ 791.5, 235.999999999999943, 745.5, 235.999999999999943, 745.5, 70.0, 759.5, 70.0 ],
 					"source" : [ "obj-4", 0 ]
 				}
 
@@ -2749,7 +2755,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-78", 0 ],
-					"midpoints" : [ 758.5, 450.141304347826122, 522.5, 450.141304347826122 ],
+					"midpoints" : [ 759.5, 450.141304347826122, 522.5, 450.141304347826122 ],
 					"source" : [ "obj-88", 0 ]
 				}
 
@@ -2774,7 +2780,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
 					"hidden" : 1,
-					"midpoints" : [ 37.166662931442261, 52.474636975837797, 752.5, 52.474636975837797 ],
+					"midpoints" : [ 37.166662931442261, 52.474636975837797, 667.5, 52.474636975837797 ],
 					"source" : [ "obj-93", 0 ]
 				}
 
