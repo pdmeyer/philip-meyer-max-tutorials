@@ -1,0 +1,22 @@
+{
+	"pattrstorage" : 	{
+		"name" : "metropolis-presets",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"subdiv" : [ 16 ],
+					"envelope" : [ 1000.0, 0.0, 1.0, 0.0, 0.0, 1, 0.0, 26.595744680851062, 1.0, 0, -0.545, 1000.0, 0.0, 1, -0.45, "curve" ],
+					"fmmoddepth" : [ 0.07 ],
+					"fmmodratio" : [ 0.75 ],
+					"live.gain~" : [ -21.216295746096264 ],
+					"pitchoffset" : [ 60 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}
