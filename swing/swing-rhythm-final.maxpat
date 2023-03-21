@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 5,
-			"revision" : 1,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1392.0, 967.0 ],
+		"rect" : [ 34.0, 87.0, 1392.0, 967.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -51,7 +51,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 1,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -121,7 +121,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 5,
-											"revision" : 1,
+											"revision" : 3,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -462,7 +462,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 5,
-											"revision" : 1,
+											"revision" : 3,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -1171,13 +1171,13 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 5,
-											"revision" : 1,
+											"revision" : 3,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 44.0, 83.0, 1333.0, 963.0 ],
+										"rect" : [ 44.0, 87.0, 1333.0, 963.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -1205,7 +1205,6 @@
 										"style" : "",
 										"subpatcher_template" : "",
 										"assistshowspatchername" : 0,
-										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"comment" : "",
@@ -1828,13 +1827,13 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 1,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 34.0, 105.0, 1392.0, 941.0 ],
+						"rect" : [ 34.0, 113.0, 1392.0, 941.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2041,7 +2040,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 5,
-											"revision" : 1,
+											"revision" : 3,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -2969,7 +2968,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 1,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3743,7 +3742,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 1,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3908,7 +3907,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 5,
-											"revision" : 1,
+											"revision" : 3,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -4639,7 +4638,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 5,
-											"revision" : 1,
+											"revision" : 3,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -5413,78 +5412,15 @@
 		"dependency_cache" : [ 			{
 				"name" : "go.gate2trig.gendsp",
 				"bootpath" : "~/Documents/Max 8/Packages/GeneratingSoundAndOrganizingTime/patchers",
-				"patcherrelativepath" : "../../../../../../Documents/Max 8/Packages/GeneratingSoundAndOrganizingTime/patchers",
+				"patcherrelativepath" : "../../../Max 8/Packages/GeneratingSoundAndOrganizingTime/patchers",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "go.onepole.hz.gendsp",
 				"bootpath" : "~/Documents/Max 8/Packages/GeneratingSoundAndOrganizingTime/patchers",
-				"patcherrelativepath" : "../../../../../../Documents/Max 8/Packages/GeneratingSoundAndOrganizingTime/patchers",
+				"patcherrelativepath" : "../../../Max 8/Packages/GeneratingSoundAndOrganizingTime/patchers",
 				"type" : "gDSP",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "grid.png",
-				"bootpath" : "~/Downloads",
-				"patcherrelativepath" : "../../../../../../Downloads",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "matched events.png",
-				"bootpath" : "~/Downloads",
-				"patcherrelativepath" : "../../../../../../Downloads",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "regular.png",
-				"bootpath" : "~/Downloads",
-				"patcherrelativepath" : "../../../../../../Downloads",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "straight subdivs.png",
-				"bootpath" : "~/Downloads",
-				"patcherrelativepath" : "../../../../../../Downloads",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "straight.png",
-				"bootpath" : "~/Downloads",
-				"patcherrelativepath" : "../../../../../../Downloads",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "swing (1).png",
-				"bootpath" : "~/Downloads",
-				"patcherrelativepath" : "../../../../../../Downloads",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "swing grid (2).png",
-				"bootpath" : "~/Downloads",
-				"patcherrelativepath" : "../../../../../../Downloads",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "swing subdivs.png",
-				"bootpath" : "~/Downloads",
-				"patcherrelativepath" : "../../../../../../Downloads",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "swung.png",
-				"bootpath" : "~/Downloads",
-				"patcherrelativepath" : "../../../../../../Downloads",
-				"type" : "PNG",
 				"implicit" : 1
 			}
  ],

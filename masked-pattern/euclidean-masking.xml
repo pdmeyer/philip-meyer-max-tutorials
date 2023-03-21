@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<pattrstorage name = "euclidean-masking">
+	<slot number = "1">
+		<pattr name = "bpm" value = "5." />
+		<pattr name = "density" value = "0.464567" />
+		<pattr name = "length" value = "32." />
+		<pattr name = "melody" value = "55 59 59 55 52 52 53 57" />
+		<pattr name = "melody_offset" value = "0." />
+		<pattr name = "rotate" value = "0.110236" />
+		<pattr name = "subdiv" value = "16." />
+		<pattr name = "variation" value = "0." />
+		<pattr name = "windowlength" value = "0.496063" />
+		<pattr name = "windows" value = "1." />
+	</slot>
+</pattrstorage>
+
