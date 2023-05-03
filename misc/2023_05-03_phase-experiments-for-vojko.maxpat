@@ -61,7 +61,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 39.0, 448.0, 194.0, 60.0 ],
+					"patching_rect" : [ 39.0, 448.0, 197.0, 60.0 ],
 					"text" : "note - child is wrapped to 0 - 1 range AND will also reset its phase to 0. when the rate-adjusted parent wraps"
 				}
 
@@ -74,9 +74,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 165.0, 191.0, 239.0, 51.0 ],
-					"presentation_linecount" : 5,
-					"text" : "rate that the child/slave phasor should interp to (rate is used as it is in rate~ obect. higher values = shallower slope)"
+					"patching_rect" : [ 165.0, 195.5, 239.0, 51.0 ],
+					"text" : "rate that the child/slave phasor should interp to (rate is is a subdivision (higher value = higher slope)"
 				}
 
 			}
@@ -88,7 +87,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 242.0, 426.0, 184.0, 20.0 ],
-					"presentation_linecount" : 2,
 					"text" : "rate-adjusted parent phasor "
 				}
 
@@ -130,7 +128,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 165.0, 137.0, 203.0, 51.0 ],
-					"presentation_linecount" : 3,
 					"text" : "loops of main/master/parent phasor over which child phasor's gradually interpolates to"
 				}
 
@@ -587,7 +584,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 133.72222226858139, 288.0, 152.333331942558289, 20.0 ],
-									"presentation_linecount" : 3,
 									"text" : "rate-adjusted main phasor"
 								}
 
@@ -648,7 +644,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 307.5, 68.0, 94.5, 47.0 ],
-									"presentation_linecount" : 3,
 									"text" : "wrap of rate-adjusted parent"
 								}
 
@@ -661,7 +656,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 390.5, 130.0, 209.0, 47.0 ],
-									"presentation_linecount" : 13,
 									"text" : "latch objects prevent param values from changing until the rate-adjusted parent wraps (or its slope is 0)"
 								}
 
@@ -674,7 +668,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 21.5, 88.5, 78.0, 33.0 ],
-									"presentation_linecount" : 3,
 									"text" : "slope of main phasor "
 								}
 
@@ -687,7 +680,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 125.0, 495.0, 106.0, 60.0 ],
-									"presentation_linecount" : 4,
 									"text" : "reset child's phase when the rate-adjusted parent wraps"
 								}
 
@@ -700,7 +692,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 161.0, 451.0, 106.0, 33.0 ],
-									"presentation_linecount" : 2,
 									"text" : "accumulate the child phasor"
 								}
 
@@ -713,7 +704,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 275.0, 334.0, 134.0, 60.0 ],
-									"presentation_linecount" : 6,
 									"text" : "use rate adjusted main phasor to interp from the old child rate to the new one"
 								}
 
@@ -726,7 +716,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 375.5, 245.0, 203.5, 47.0 ],
-									"presentation_linecount" : 13,
 									"text" : "make rate-adjusted main phasor by scaling main phasor's slope by 1 / parentrate, then accumulating"
 								}
 
@@ -739,7 +728,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 285.5, 201.5, 69.0, 47.0 ],
-									"presentation_linecount" : 2,
 									"text" : "old child rate to interp from"
 								}
 
@@ -848,18 +836,6 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 104.5, 94.0, 79.0, 22.0 ],
 									"text" : "wrap -0.5 0.5"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-26",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 125.0, 397.0, 29.0, 22.0 ],
-									"text" : "!/ 1."
 								}
 
 							}
@@ -1086,7 +1062,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-26", 0 ],
+									"destination" : [ "obj-24", 1 ],
 									"order" : 1,
 									"source" : [ "obj-19", 0 ]
 								}
@@ -1105,13 +1081,6 @@
 								"patchline" : 								{
 									"destination" : [ "obj-32", 0 ],
 									"source" : [ "obj-24", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-24", 1 ],
-									"source" : [ "obj-26", 0 ]
 								}
 
 							}
@@ -1293,7 +1262,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 13.0, 205.5, 150.0, 22.0 ]
+					"patching_rect" : [ 13.0, 210.0, 150.0, 22.0 ]
 				}
 
 			}
