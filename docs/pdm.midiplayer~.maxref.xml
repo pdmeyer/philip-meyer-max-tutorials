@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--If you edit this file, please place it in a safe place since future exports will overwrite this automatically generated reference file.-->
+<c74object name="pdm.midiplayer~">
+<metadatalist>
+<metadata name="author">Philip Meyer</metadata>
+<metadata name="tag">sequencing</metadata>
+</metadatalist>
+<attributelist>
+<attribute name="defaultnote" get="1" set="1" size="1" type="float64">
+<digest>Sets the default MIDI note value. When a nonzero signal to the second inlet, this value is ignored.</digest>
+</attribute>
+<attribute name="defaultvel" get="1" set="1" size="1" type="float64">
+<digest>Sets the default MIDI velocity value. When a nonzero signal to the third inlet, this value is ignored.</digest>
+</attribute>
+<attribute name="defaultdur" get="1" set="1" size="1" type="float64">
+<digest>Sets the default note duration. When a nonzero signal to the fourth inlet, this value is ignored.</digest>
+</attribute>
+<attribute name="channel" get="1" set="1" size="1" type="float64">
+<digest>MIDI channel to transmit messages over.</digest>
+</attribute>
+</attributelist>
+<description><o>pdm.midiplayer~</o> accepts signals representing MIDI note, velocity, a note duration to form MIDI notes. Notes are sent in response to a impulse sent to the first inlet. This object is similar to <o>mc.midiplayer~</o>, but it sends standard MIDI messages and handles polyphony more simply.</description>
+<digest>MIDI note generator for signal-based sequencers.</digest>
+</c74object>

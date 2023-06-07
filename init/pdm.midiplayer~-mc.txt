@@ -1,0 +1,1 @@
+max objectfile mc.pdm.midiplayer~ mc.wrapper~ pdm.midiplayer~;
