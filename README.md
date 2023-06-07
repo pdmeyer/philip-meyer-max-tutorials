@@ -1,9 +1,9 @@
 # Philip Meyer Max Tutorials
 This is the repository for the companion patches to my Max MSP tutorial videos. 
 
-Philip is a [Max Certified Trainer](https://cycling74.com/certified-trainers) based in Los Angeles, CA
-
 [Channel on YouTube](https://www.youtube.com/channel/UCvBA1sS2Y7BznhUNn8pWQ9A)
+
+Philip is a [Max Certified Trainer](https://cycling74.com/certified-trainers) based in Los Angeles, CA
 
 ## Installing this package
 If you want, you can simply download individual patches directly from the repository. 
