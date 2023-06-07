@@ -5,7 +5,11 @@ This is the repository for the companion patches to my Max MSP tutorial videos. 
 [Playlist: Fundamentals of Sequencing](https://www.youtube.com/watch?v=lC9RJW57Dnk&list=PLyrJzbPfiEyCtAEyxEStFum7BKPaL-c-4)
 
 ## Installing this package
-If you want, you can simply download individual patches directly from the repository. *However*, I recommend cloning the entire repository and placing it in the **Documents/Max 8/Packages** on your computer. This will make sure that the patches work correctly and you'll get all the goodies like extras, help files, etc. It also makes it easy for you to always get the latest patches.
+If you want, you can simply download individual patches directly from the repository. 
+
+*However*, I recommend cloning the entire repository and placing it in the **Documents/Max 8/Packages** on your computer. 
+
+This will make sure that the patches work correctly and you'll get all the goodies like extras, help files, etc. It also makes it easy for you to always get the latest patches.
 
 If you don't know what "repository" or "cloning" mean or would generally like a refresher on Git, I recommend [Daniel Schiffman's videos on the subject)](https://www.youtube.com/watch?v=BCQHnlnPusY). Personally I use [GitHub Desktop](https://desktop.github.com/), which is a desktop application that provides a nice interface for managing repositories. 
 
