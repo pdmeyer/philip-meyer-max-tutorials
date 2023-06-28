@@ -57,8 +57,8 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1162.0, 704.0 ],
-						"bglocked" : 0,
+						"rect" : [ 34.0, 113.0, 1162.0, 704.0 ],
+						"bglocked" : 1,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
 						"default_fontface" : 0,
@@ -87,6 +87,34 @@
 						"showontab" : 1,
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"angle" : 270.0,
+									"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
+									"border" : 1,
+									"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"id" : "obj-22",
+									"maxclass" : "panel",
+									"mode" : 0,
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 79.0, 321.0, 116.0, 122.0 ],
+									"proportion" : 0.5
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-16",
+									"linecount" : 3,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 198.0, 400.0, 150.0, 47.0 ],
+									"text" : "< this is the abstraction pdm.keyboard map as a bpatcher. "
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"fontsize" : 14.0,
 									"id" : "obj-102",
@@ -131,8 +159,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 237.401867985725403, 538.0, 60.280374526977539, 33.0 ],
-									"presentation_linecount" : 2,
+									"patching_rect" : [ 237.401867985725403, 538.0, 61.0, 33.0 ],
 									"text" : "keyboard mapping"
 								}
 
@@ -157,7 +184,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 130.85981273651123, 538.0, 60.280374526977539, 33.0 ],
-									"presentation_linecount" : 2,
 									"text" : "mapped note"
 								}
 
@@ -183,7 +209,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 210.551400601863861, 182.616822719573975, 106.149532616138458, 39.0 ],
-									"presentation_linecount" : 2,
 									"text" : "play some notes"
 								}
 
@@ -196,7 +221,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 198.0, 509.205607056617737, 325.700932443141937, 22.0 ],
-									"text" : "map 12 0 127 60 69 440. 7 1 2 2 3 4 4 4 5 5 5 5 5"
+									"text" : "map 12 0 127 60 69 440. 7 0 0 0 0 0 0 0 0 0 0 0 0"
 								}
 
 							}
@@ -209,7 +234,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 198.0, 341.0, 79.0, 37.0 ],
-									"presentation_linecount" : 2,
 									"text" : "create a mapping"
 								}
 
@@ -464,7 +488,7 @@
 									"numoutlets" : 3,
 									"offset" : [ 0.0, 0.0 ],
 									"outlettype" : [ "signal", "signal", "" ],
-									"patching_rect" : [ 84.0, 328.0, 128.0, 115.0 ],
+									"patching_rect" : [ 84.0, 328.0, 111.0, 115.0 ],
 									"viewvisibility" : 1
 								}
 
@@ -505,7 +529,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 6.0, 46.0, 556.0, 100.0 ],
-									"presentation_linecount" : 6,
 									"text" : "if you want to use a traditional piano-style keyboard with a scala scale and want the octave to repeat every 12 notes, you'll need to create a scala mapping using the \"map\" attribute of mtof~\n\nin the same way that the \"scale\" attribute of mtof is derived from the scala .scl file, the map attribute is derived from the Scala .kbm (keyboard mapping) file"
 								}
 
@@ -3722,7 +3745,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 34.0, 113.0, 1162.0, 704.0 ],
+						"rect" : [ 0.0, 26.0, 1162.0, 704.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
