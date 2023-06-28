@@ -58,7 +58,7 @@
 ,
 						"classnamespace" : "box",
 						"rect" : [ 34.0, 113.0, 1162.0, 704.0 ],
-						"bglocked" : 1,
+						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
 						"default_fontface" : 0,
@@ -87,22 +87,6 @@
 						"showontab" : 1,
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
-								"box" : 								{
-									"angle" : 270.0,
-									"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
-									"border" : 1,
-									"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"id" : "obj-22",
-									"maxclass" : "panel",
-									"mode" : 0,
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 79.0, 321.0, 116.0, 122.0 ],
-									"proportion" : 0.5
-								}
-
-							}
-, 							{
 								"box" : 								{
 									"id" : "obj-16",
 									"linecount" : 3,
@@ -221,7 +205,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 198.0, 509.205607056617737, 325.700932443141937, 22.0 ],
-									"text" : "map 12 0 127 60 69 440. 7 0 0 0 0 0 0 0 0 0 0 0 0"
+									"text" : "map 12 0 127 60 69 440. 7 0 0 1 1 1 2 3 4 4 4 5 6"
 								}
 
 							}
@@ -565,6 +549,22 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 69.0, 164.0, 85.0, 20.0 ],
 									"text" : "start audio"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"angle" : 270.0,
+									"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
+									"border" : 1,
+									"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"id" : "obj-22",
+									"maxclass" : "panel",
+									"mode" : 0,
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 79.0, 321.0, 116.0, 122.0 ],
+									"proportion" : 0.5
 								}
 
 							}
