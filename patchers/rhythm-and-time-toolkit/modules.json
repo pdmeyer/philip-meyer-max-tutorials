@@ -1,0 +1,78 @@
+{
+	"pattrstorage" : 	{
+		"name" : "modules",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"myclock::rtt.clock.presets" : [ -1 ],
+					"myclock::m::transportstate" : [ 0.0 ],
+					"myclock::m::bpm" : [ 84.0 ],
+					"myclock::m::syncupdate" : [ 0.0 ],
+					"myclock::m::barlength" : [ 4.0 ],
+					"loop1::rtt.loop.presets" : [ -1 ],
+					"loop1::m::steps" : [ 16.0 ],
+					"loop1::m::subdiv" : [ 16.0 ],
+					"loop1::m::drunk2minus" : [ 0.330000013113022 ],
+					"loop1::m::drunk2plus" : [ 0.330000013113022 ],
+					"loop1::m::drunk2equals" : [ 0.330000013113022 ],
+					"loop1::m::direction" : [ "forward" ],
+					"loop1::m::regionstart" : [ 0.0 ],
+					"loop1::m::regionlength" : [ 1.0 ],
+					"loop1::m::subdivmode" : [ "polymetric" ],
+					"loop1::m::syncupdate" : [ 1 ]
+				}
+
+			}
+,
+			"2" : 			{
+				"id" : 2,
+				"data" : 				{
+					"myclock::rtt.clock.presets" : [ -1 ],
+					"myclock::m::transportstate" : [ 0.0 ],
+					"myclock::m::bpm" : [ 906.0 ],
+					"myclock::m::syncupdate" : [ 0.0 ],
+					"myclock::m::barlength" : [ 4.0 ],
+					"loop1::rtt.loop.presets" : [ -1 ],
+					"loop1::m::steps" : [ 48.0 ],
+					"loop1::m::subdiv" : [ 48.0 ],
+					"loop1::m::drunk2minus" : [ 0.330000013113022 ],
+					"loop1::m::drunk2plus" : [ 0.330000013113022 ],
+					"loop1::m::drunk2equals" : [ 0.330000013113022 ],
+					"loop1::m::direction" : [ "forward" ],
+					"loop1::m::regionstart" : [ 0.0 ],
+					"loop1::m::regionlength" : [ 1.0 ],
+					"loop1::m::subdivmode" : [ "polymetric" ],
+					"loop1::m::syncupdate" : [ 1 ]
+				}
+
+			}
+,
+			"3" : 			{
+				"id" : 3,
+				"data" : 				{
+					"myclock::rtt.clock.presets" : [ -1 ],
+					"myclock::m::transportstate" : [ 0.0 ],
+					"myclock::m::bpm" : [ 4133.0 ],
+					"myclock::m::syncupdate" : [ 0.0 ],
+					"myclock::m::barlength" : [ 4.0 ],
+					"loop1::rtt.loop.presets" : [ -1 ],
+					"loop1::m::steps" : [ 0.0 ],
+					"loop1::m::subdiv" : [ 190.0 ],
+					"loop1::m::drunk2minus" : [ 0.330000013113022 ],
+					"loop1::m::drunk2plus" : [ 0.330000013113022 ],
+					"loop1::m::drunk2equals" : [ 0.330000013113022 ],
+					"loop1::m::direction" : [ "forward" ],
+					"loop1::m::regionstart" : [ 0.0 ],
+					"loop1::m::regionlength" : [ 1.0 ],
+					"loop1::m::subdivmode" : [ "polymetric" ],
+					"loop1::m::syncupdate" : [ 1 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}
