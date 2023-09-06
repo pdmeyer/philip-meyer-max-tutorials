@@ -353,7 +353,7 @@
 , 			{
 				"box" : 				{
 					"color" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"columns" : 12,
+					"columns" : 45,
 					"id" : "obj-42",
 					"ignoreclick" : 1,
 					"maxclass" : "matrixctrl",
@@ -369,12 +369,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-17",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 589.0, 284.0, 297.0, 22.0 ],
-					"text" : "pattern 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
+					"patching_rect" : [ 589.0, 284.0, 297.0, 35.0 ],
+					"text" : "pattern 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
 				}
 
 			}
