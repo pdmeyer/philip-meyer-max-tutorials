@@ -1293,7 +1293,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 36.5, 18.5, 332.0, 33.0 ],
-					"text" : "Sampler in gen~"
+					"text" : "Sampler in gen~ (part 1)"
 				}
 
 			}
@@ -1396,7 +1396,7 @@
 			}
 , 			{
 				"box" : 				{
-					"buffername" : "samples.3",
+					"buffername" : "samples.1",
 					"id" : "obj-93",
 					"maxclass" : "waveform~",
 					"numinlets" : 5,
