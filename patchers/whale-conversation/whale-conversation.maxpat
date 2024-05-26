@@ -1625,7 +1625,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1158.0, 103.0, 71.0, 22.0 ],
+					"patching_rect" : [ 1097.0, 107.5, 71.0, 22.0 ],
 					"text" : "s tosampler"
 				}
 
@@ -1649,7 +1649,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1158.0, 74.0, 81.0, 22.0 ],
+					"patching_rect" : [ 1097.0, 78.5, 81.0, 22.0 ],
 					"text" : "sample_sr $1"
 				}
 
@@ -1661,7 +1661,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1034.0, 74.0, 58.0, 22.0 ],
+					"patching_rect" : [ 973.0, 78.5, 58.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -1673,7 +1673,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 10,
 					"outlettype" : [ "float", "list", "float", "float", "float", "float", "float", "", "int", "" ],
-					"patching_rect" : [ 1034.0, 103.0, 113.5, 22.0 ],
+					"patching_rect" : [ 973.0, 107.5, 113.5, 22.0 ],
 					"text" : "info~ whale_sound"
 				}
 
@@ -1685,7 +1685,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
-					"patching_rect" : [ 1034.0, 45.0, 209.0, 22.0 ],
+					"patching_rect" : [ 973.0, 49.5, 209.0, 22.0 ],
 					"text" : "buffer~ whale_sound whale-click.mp3"
 				}
 
@@ -3729,8 +3729,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1176.0, 596.0, 41.666662991046906, 20.0 ],
-					"text" : "orn."
+					"patching_rect" : [ 1176.0, 596.0, 64.0, 20.0 ],
+					"text" : "ornament"
 				}
 
 			}
@@ -3740,8 +3740,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 505.802986830472946, 594.924191266298294, 41.666662991046906, 20.0 ],
-					"text" : "orn."
+					"patching_rect" : [ 505.802986830472946, 594.924191266298294, 64.197013169527054, 20.0 ],
+					"text" : "ornament"
 				}
 
 			}
