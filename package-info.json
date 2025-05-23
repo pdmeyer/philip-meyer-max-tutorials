@@ -1,0 +1,37 @@
+{
+	"name" : "philip-meyer-max-tutorials",
+	"displayname" : "",
+	"version" : "1.0.0",
+	"author" : "Philip Meyer",
+	"authors" : [  ],
+	"description" : "patches from philip's youtube tutorials",
+	"tags" : [ "" ],
+	"website" : "https://www.youtube.com/@p__meyer",
+	"extends" : "",
+	"extensible" : 0,
+	"max_version_min" : "8.0.0",
+	"max_version_max" : "none",
+	"os" : 	{
+		"macintosh" : 		{
+			"min_version" : "10.11.x",
+			"platform" : [ "aarch64", "x64" ]
+		}
+,
+		"windows" : 		{
+			"min_version" : "8",
+			"platform" : [ "x64" ]
+		}
+
+	}
+,
+	"homepatcher" : "",
+	"package_extra" : 	{
+		"copyright" : ""
+	}
+,
+	"filelist" : 	{
+	}
+,
+	"c74install" : 1,
+	"installdate" : 3797865493
+}
