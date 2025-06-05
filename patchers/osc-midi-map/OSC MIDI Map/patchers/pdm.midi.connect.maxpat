@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 9,
 			"minor" : 0,
-			"revision" : 6,
+			"revision" : 7,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -127,7 +127,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 307.0, 71.0, 54.0, 22.0 ],
+					"patching_rect" : [ 172.0, 67.0, 54.0, 22.0 ],
 					"text" : "sel done"
 				}
 
@@ -139,8 +139,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 105.0, 41.0, 221.0, 22.0 ],
-					"text" : "patcherargs @device \"Launchpad MK2\""
+					"patching_rect" : [ 119.0, 37.0, 72.0, 22.0 ],
+					"text" : "patcherargs"
 				}
 
 			}
@@ -188,7 +188,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 50.0, 341.0, 150.0, 22.0 ],
-					"text" : "zl.sub \"Launchpad MK2\""
+					"text" : "zl.sub"
 				}
 
 			}

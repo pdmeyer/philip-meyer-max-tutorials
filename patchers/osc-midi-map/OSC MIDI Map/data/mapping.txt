@@ -1,0 +1,1 @@
+0 /param1, 0 /param1 0. 127. 0. 1. 1.;1 /slider1, 1 /slider2;
