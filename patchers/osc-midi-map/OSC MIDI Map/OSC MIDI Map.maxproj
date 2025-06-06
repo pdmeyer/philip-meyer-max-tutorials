@@ -2,7 +2,7 @@
 	"name" : "OSC MIDI Map",
 	"version" : 1,
 	"creationdate" : 3831931615,
-	"modificationdate" : 3831932145,
+	"modificationdate" : 3832024837,
 	"viewrect" : [ 25.0, 119.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -18,7 +18,15 @@
 
 		}
 ,
+		"code" : 		{
+
+		}
+,
 		"data" : 		{
+			"mapping.txt" : 			{
+				"kind" : "textfile",
+				"local" : 1
+			}
 
 		}
 ,
