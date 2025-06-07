@@ -75,7 +75,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 299.0, 40.0, 63.0, 37.0 ],
+					"patching_rect" : [ 299.0, 40.0, 66.0, 37.0 ],
 					"text" : "turn on audio"
 				}
 
@@ -398,7 +398,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 433.0, 216.0, 80.0, 22.0 ],
+					"patching_rect" : [ 430.0, 196.0, 80.0, 22.0 ],
 					"text" : "prepend prob"
 				}
 
@@ -410,7 +410,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 194.0, 216.0, 55.0, 22.0 ],
+					"patching_rect" : [ 191.0, 196.0, 55.0, 22.0 ],
 					"text" : "getrow 0"
 				}
 
@@ -425,7 +425,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "list", "list" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 194.0, 188.0, 258.0, 18.0 ],
+					"patching_rect" : [ 191.0, 168.0, 258.0, 18.0 ],
 					"rows" : 1
 				}
 
@@ -571,12 +571,12 @@
 					"background" : 1,
 					"hidden" : 1,
 					"id" : "obj-19",
-					"linecount" : 3,
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 123.0, 605.0, 173.0, 49.0 ],
+					"patching_rect" : [ 123.0, 605.0, 273.0, 35.0 ],
 					"text" : ";\rmax launchbrowser https://youtu.be/MjLqjS9JqD4"
 				}
 
@@ -676,7 +676,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-119", 0 ],
-					"midpoints" : [ 203.5, 248.0, 180.294270141748711, 248.0, 180.294270141748711, 178.0, 203.5, 178.0 ],
+					"midpoints" : [ 200.5, 228.0, 177.294270141748711, 228.0, 177.294270141748711, 158.0, 200.5, 158.0 ],
 					"source" : [ "obj-123", 0 ]
 				}
 
