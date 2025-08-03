@@ -1,0 +1,2 @@
+max define interpsah~ gen~ interpsah.gendsp
+max define phasorscope~ live.scope~ @range -0.1 1.1
