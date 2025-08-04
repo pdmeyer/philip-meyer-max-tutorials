@@ -10,11 +10,35 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 100.0, 1156.0, 848.0 ],
+		"rect" : [ 34.0, 100.0, 868.0, 848.0 ],
 		"bglocked" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
 		"integercoordinates" : 1,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-12",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 59.0, 770.0, 178.0, 60.0 ],
+					"presentation_linecount" : 6,
+					"text" : "(after making the video i discovered a different way to do the accumulation in MSP... see this abstraction to learn how)"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-10",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patching_rect" : [ 59.0, 744.0, 136.0, 22.0 ],
+					"text" : "alternate-msp-approach"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontsize" : 24.0,
 					"id" : "obj-80",
@@ -174,7 +198,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 694.0, 105.0, 150.0, 33.0 ],
-					"presentation_linecount" : 2,
 					"text" : "\"accumulation\"\n\"integration\""
 				}
 
@@ -187,7 +210,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 552.0, 105.0, 101.0, 33.0 ],
-					"presentation_linecount" : 2,
 					"text" : "w/ multiplication or addition"
 				}
 
@@ -394,7 +416,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 468.0, 468.0, 139.0, 47.0 ],
+					"patching_rect" : [ 468.0, 468.0, 143.0, 47.0 ],
 					"text" : "add one to transform the random value range from -1 - 1 to 0 - 2"
 				}
 
@@ -488,7 +510,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 262.0, 614.0, 63.0, 47.0 ],
-									"presentation_linecount" : 3,
 									"text" : "wrapped running total"
 								}
 
@@ -525,7 +546,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 99.0, 662.0, 88.0, 33.0 ],
-									"presentation_linecount" : 2,
 									"text" : "integrate /\naccumulate"
 								}
 
@@ -1226,6 +1246,23 @@
 				}
 
 			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"background" : 1,
+					"bgcolor" : [ 0.172137149796092, 0.172137100044002, 0.172137113045018, 0.0 ],
+					"border" : 1,
+					"bordercolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"id" : "obj-19",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 46.0, 719.0, 205.0, 128.0 ],
+					"proportion" : 0.5
+				}
+
+			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
@@ -1529,6 +1566,7 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-10::obj-25" : [ "live.dial", "Amount", 0 ],
 			"obj-16" : [ "Depth", "Depth", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
@@ -1542,7 +1580,14 @@
 			"inherited_shortname" : 1
 		}
 ,
-		"dependency_cache" : [  ],
+		"dependency_cache" : [ 			{
+				"name" : "alternate-msp-approach.maxpat",
+				"bootpath" : "~/Documents/Max 9/Packages/philip-meyer-max-tutorials/patchers/clock-modulation-basics",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
 		"autosave" : 0
 	}
 
