@@ -20,7 +20,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 533.0, 309.0, 184.0, 68.0 ]
+					"patching_rect" : [ 685.0, 223.0, 184.0, 68.0 ]
 				}
 
 			}
@@ -56,7 +56,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 562.0, 183.0, 131.0, 22.0 ],
+					"patching_rect" : [ 564.0, 183.0, 131.0, 22.0 ],
 					"text" : "gen~ interpsah.gendsp"
 				}
 
