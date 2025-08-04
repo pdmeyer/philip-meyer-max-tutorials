@@ -10,18 +10,29 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 100.0, 1156.0, 848.0 ],
+		"rect" : [ 34.0, 100.0, 868.0, 848.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"integercoordinates" : 1,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-92",
+					"id" : "obj-3",
 					"maxclass" : "live.scope~",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 32.0, 278.0, 184.0, 68.0 ],
-					"range" : [ -0.1, 1.1 ]
+					"patching_rect" : [ 533.0, 309.0, 184.0, 68.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 32.0, 344.0, 301.0, 33.0 ],
+					"text" : "define messages to Max (these get sent automatically by init.txt in Package folder)"
 				}
 
 			}
@@ -33,7 +44,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 195.0, 368.0, 300.0, 35.0 ],
+					"patching_rect" : [ 33.0, 423.0, 300.0, 35.0 ],
 					"text" : ";\rmax define phasorscope~ live.scope~ @range -0.1 1.1"
 				}
 
@@ -45,7 +56,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 589.0, 177.0, 131.0, 22.0 ],
+					"patching_rect" : [ 562.0, 183.0, 131.0, 22.0 ],
 					"text" : "gen~ interpsah.gendsp"
 				}
 
@@ -58,7 +69,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 262.0, 300.0, 253.0, 35.0 ],
+					"patching_rect" : [ 33.0, 379.0, 253.0, 35.0 ],
 					"text" : ";\rmax define interpsah~ gen~ interpsah.gendsp"
 				}
 
@@ -70,7 +81,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 514.0, 212.0, 184.0, 68.0 ]
+					"patching_rect" : [ 487.0, 223.0, 184.0, 68.0 ]
 				}
 
 			}
@@ -81,7 +92,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 514.0, 177.0, 65.0, 22.0 ],
+					"patching_rect" : [ 487.0, 183.0, 65.0, 22.0 ],
 					"text" : "interpsah~"
 				}
 
@@ -93,7 +104,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 387.0, 114.0, 83.0, 28.0 ],
+					"patching_rect" : [ 387.0, 180.0, 83.0, 28.0 ],
 					"range" : [ -0.1, 1.1 ]
 				}
 
@@ -105,7 +116,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 532.0, 101.0, 150.0, 33.0 ],
+					"patching_rect" : [ 402.0, 68.0, 150.0, 33.0 ],
 					"text" : "requires ease~ package from package manager"
 				}
 
@@ -117,7 +128,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 350.0, 84.0, 42.0, 22.0 ],
+					"patching_rect" : [ 350.0, 73.0, 42.0, 22.0 ],
 					"text" : "ease~"
 				}
 
@@ -129,7 +140,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 219.0, 34.0, 57.0, 21.0 ],
+					"patching_rect" : [ 188.0, 34.0, 57.0, 21.0 ],
 					"range" : [ -0.1, 1.1 ]
 				}
 
@@ -141,7 +152,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 262.0, 166.0, 184.0, 68.0 ]
+					"patching_rect" : [ 262.0, 232.0, 184.0, 68.0 ]
 				}
 
 			}
@@ -372,7 +383,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 262.0, 117.0, 107.0, 22.0 ],
+					"patching_rect" : [ 262.0, 183.0, 107.0, 22.0 ],
 					"text" : "gen~ @t interpsah"
 				}
 
@@ -384,7 +395,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 32.0, 185.0, 184.0, 68.0 ]
+					"patching_rect" : [ 32.0, 243.0, 184.0, 68.0 ]
 				}
 
 			}
@@ -395,7 +406,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 159.0, 74.0, 57.0, 21.0 ],
+					"patching_rect" : [ 188.0, 79.0, 57.0, 21.0 ],
 					"range" : [ -0.1, 1.1 ]
 				}
 
@@ -407,7 +418,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 32.0, 117.0, 88.0, 22.0 ],
+					"patching_rect" : [ 32.0, 183.0, 88.0, 22.0 ],
 					"text" : "sah~"
 				}
 
@@ -432,7 +443,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 101.0, 33.0, 66.0, 22.0 ],
-					"text" : "phasor~ 2."
+					"text" : "phasor~ 4."
 				}
 
 			}
@@ -457,7 +468,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 456.0, 46.0, 226.0, 22.0 ]
+					"patching_rect" : [ 350.0, 38.0, 226.0, 22.0 ]
 				}
 
 			}
@@ -465,7 +476,7 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-51", 0 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-46", 0 ]
 				}
 
@@ -473,6 +484,14 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-76", 0 ],
+					"order" : 1,
+					"source" : [ "obj-46", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-84", 0 ],
 					"order" : 0,
 					"source" : [ "obj-46", 0 ]
 				}
@@ -504,14 +523,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-92", 0 ],
-					"order" : 3,
-					"source" : [ "obj-48", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-51", 1 ],
 					"order" : 1,
 					"source" : [ "obj-49", 0 ]
@@ -536,15 +547,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-77", 0 ],
-					"order" : 1,
-					"source" : [ "obj-76", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-84", 0 ],
-					"order" : 0,
 					"source" : [ "obj-76", 0 ]
 				}
 
@@ -577,6 +579,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-79", 0 ],
 					"source" : [ "obj-83", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"source" : [ "obj-84", 1 ]
 				}
 
 			}
