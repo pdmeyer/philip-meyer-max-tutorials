@@ -1,0 +1,109 @@
+{
+	"patcher" : 	{
+		"fileversion" : 1,
+		"appversion" : 		{
+			"major" : 9,
+			"minor" : 0,
+			"revision" : 7,
+			"architecture" : "x64",
+			"modernui" : 1
+		}
+,
+		"classnamespace" : "dsp.gen",
+		"rect" : [ 34.0, 100.0, 1123.0, 477.0 ],
+		"gridsize" : [ 15.0, 15.0 ],
+		"integercoordinates" : 1,
+		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 901.0, 538.0, 35.0, 22.0 ],
+					"text" : "out 2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 35.0, 533.0, 35.0, 22.0 ],
+					"text" : "out 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 161.0, 34.0, 28.0, 22.0 ],
+					"text" : "in 2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 35.0, 34.0, 28.0, 22.0 ],
+					"text" : "in 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"code" : "sin_(phase) {\r\n\treturn cycle((phase - 0.25) % 1, index=\"phase\");\r\n}\r\n\r\ncos_(phase) {\r\n\treturn cycle(phase, index=\"phase\");\r\n}\r\n\r\nParam pitch(57, min=0, max=127);\r\nParam ratio(1, min=0);\r\nParam bands(0, min=0);\r\n\r\na = tanh(clip(in1, 0, 1)) * 0.99;\r\nrst = in2;\r\nfc = mtof(pitch);\r\nfm = fc * ratio;\r\n\r\nnyquist = samplerate / 2;\r\n\r\nn = bands ? bands : floor((nyquist - fc) / fm);\r\n\r\n\r\ntheta = phasor(fc, rst);\r\nbeta = phasor(fm, rst);\r\nasqrd = a * a;\r\n\r\ndividend = sin_(theta) - a * sin_(theta - beta) - pow(a, n+1) * ( sin_(theta + (n+1) * beta ) - a * sin_(theta + n * beta) );\r\ndivisor = 1 + asqrd - 2 * a * cos_(beta);\r\n\r\nout1 = dividend / divisor;\r\nout2 = n;\r\n\r\n",
+					"fontface" : 0,
+					"fontname" : "<Monospaced>",
+					"fontsize" : 12.0,
+					"id" : "obj-1",
+					"maxclass" : "codebox",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 35.0, 69.0, 985.0, 456.0 ]
+				}
+
+			}
+ ],
+		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"source" : [ "obj-1", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 1 ],
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+ ]
+	}
+
+}
