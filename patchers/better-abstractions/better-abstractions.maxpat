@@ -144,7 +144,6 @@
 						"rect" : [ 84.0, 144.0, 1000.0, 755.0 ],
 						"gridsize" : [ 15.0, 15.0 ],
 						"integercoordinates" : 1,
-						"visible" : 1,
 						"boxes" : [  ],
 						"lines" : [  ]
 					}
