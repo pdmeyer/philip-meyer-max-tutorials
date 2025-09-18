@@ -1,0 +1,34 @@
+{
+	"filetype" : "C74Snapshot",
+	"version" : 2,
+	"minorversion" : 0,
+	"name" : "springto",
+	"origin" : "springto",
+	"type" : "rnbo",
+	"subtype" : "",
+	"embed" : 0,
+	"snapshot" : 	{
+		"thresh" : 		{
+			"value" : 0.0
+		}
+,
+		"damping" : 		{
+			"value" : 2.0
+		}
+,
+		"stiffness" : 		{
+			"value" : 1000.0
+		}
+,
+		"freeze" : 		{
+			"value" : 0.0
+		}
+,
+		"mass" : 		{
+			"value" : 1.0
+		}
+,
+		"__presetid" : "springto"
+	}
+
+}
