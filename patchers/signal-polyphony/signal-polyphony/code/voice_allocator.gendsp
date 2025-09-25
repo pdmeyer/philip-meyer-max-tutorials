@@ -1,0 +1,137 @@
+{
+	"patcher" : 	{
+		"fileversion" : 1,
+		"appversion" : 		{
+			"major" : 9,
+			"minor" : 0,
+			"revision" : 9,
+			"architecture" : "x64",
+			"modernui" : 1
+		}
+,
+		"classnamespace" : "dsp.gen",
+		"rect" : [ 142.0, 100.0, 910.0, 848.0 ],
+		"gridsize" : [ 15.0, 15.0 ],
+		"integercoordinates" : 1,
+		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 317.0, 14.0, 94.0, 22.0 ],
+					"text" : "buffer voice_buf"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 141.0, 15.0, 150.0, 20.0 ],
+					"text" : "event (pulse)"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 757.0, 15.0, 150.0, 20.0 ],
+					"text" : "duration"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 723.0, 893.0, 35.0, 22.0 ],
+					"text" : "out 2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"code" : "Param voices(16, min=1, max=128);\n\n// STEALING MODES\n// 0 = off\n// 1 = earliest\n// 2 = most recent\n// 3 = most advanced (highest norm. phase)\nParam stealing(0, min=0, max=3);\n\n// INTERNAL BUF\n// chan 0 = gate phase in samples\n// chan 1 = duration in samples (used downstream to normalize the phase)\n// chan 2 = gate off time (in samples relative to this patcher's start time);\n// chan 3 = start time\nData internal(128, 4);\n\n// EVENTS BUF (for external consumption)\n// chan 0 = normalized phase;\n\n// next slot to allocate an event to\nHistory next_voice;\n\n//ensure a pulse\nnew_event = (delta(in1) == in1) && (in1 > 0.5);\n\nstealing_ = floor(stealing);\n\nnow = elapsed();\n\n// update active events\nfor(i = 0; i < voices; i += 1) {\n\t\n\tevent_off_time = peek(internal, i, 2);\n\t\n\t// if this voice is inactive\n\tif(event_off_time == 0) {\n\t\t//if we don't have a next voice, allocate this on\r\n\t\tif(next_voice == -1) {\r\n\t\t\tnext_voice = i;\r\n\t\t}\n\t} \n\t\n\t// if this voice's event is done, clean it up\n\telse if(event_off_time <= now) {\n\t\tpoke(internal, 0, i, 0);\n\t\tpoke(internal, 0, i, 1);\n\t\tpoke(internal, 0, i, 2);\n\t\tpoke(voice_buf, 0, i, 0);\n\t} \n\t\n\t// if the event is in progress...\n\telse {\n\t\t// increment samples ramp\n\t\tphase = peek(internal, i, 0) + 1;\n\t\tpoke(internal, phase, i, 0);\n\t\n\t\t// calculate normalized ramp for external consumption\n\t\tduration = peek(internal, i, 1);\n\t\tpoke(voice_buf, phase / duration, i, 0);\r\n\t\t\r\n\t\t// pulse for external consumption\r\n\t\tif(phase > VECTORSIZE) {\r\n\t\t\tpoke(voice_buf, 0, i, 1);\r\n\t\t}\n\t}\n}\n\n\n// if voice stealing is needed, steal a voice\nif(new_event && stealing_ > 0 && next_voice == -1) {\n\t\n\tstolen = -1;\n\t\n\t// mode 1 (steal earliest)\t\n\tif(stealing_ == 1) {\n\t\t// find the voice that started its note first\n\t\tearliest_time = now;\n\t\tfor(i = 0; i < voices; i += 1) {\n\t\t\tstart_time = peek(internal, i, 3);\n\t\t\tif(start_time < earliest_time) {\n\t\t\t\tearliest_time = start_time;\n\t\t\t\tstolen = i;\n\t\t\t}\n\t\t}\n\t} \n\t\n\t// mode 2 (steal latest)\n\telse if(stealing_ == 2) {\n\t\t// find the voice that started its note first\n\t\tlatest_time = 0;\n\t\tfor(i = 0; i < voices; i += 1) {\n\t\t\tstart_time = peek(internal, i, 3);\n\t\t\tif(start_time > latest_time) {\n\t\t\t\tlatest_time = start_time;\n\t\t\t\tstolen = i;\n\t\t\t}\n\t\t}\n\t} \n\t\n\t// mode 3 (steal most advanced)\n\telse if(stealing_ == 3) {\n\t\thighest_phase = -1;\n\t\tfor(i = 0; i < voices; i += 1) {\n\t\t\tphase = peek(voice_buf, i, 0);\n\t\t\tif(phase > highest_phase) {\n\t\t\t\thighest_phase = phase;\n\t\t\t\tstolen = i;\n\t\t\t}\n\t\t}\n\t}\n\t\n\t// end the event at the stolen voice and set next_voice to its index\n\tpoke(internal, 0, stolen, 0);\n\t// (no need to update the other channels of internal. they will be overwritten in the next block)\n\tpoke(voice_buf, 0, stolen, 0);\n\tnext_voice = stolen;\r\n\t\n}\n\n// if there is a new event, allocate it\n// if there are no available voices (next_voice == -1), skip\nif(new_event && next_voice != -1) {\t\r\n\t\r\n\tduration = mstosamps(in2);\r\n\t\n\t//store duration\n\t//duration = max(1, mstosamps(in2));\n\tpoke(internal, duration, next_voice, 1);\n\t\n\t//store end time\n\toff_time = now + duration;\n\tpoke(internal, off_time, next_voice, 2);\n\t\n\t//store start time\n\tpoke(internal, now, next_voice, 3);\r\n\n\tnext_voice = -1;\n}\n\nout1 = next_voice;",
+					"fontface" : 0,
+					"fontname" : "<Monospaced>",
+					"fontsize" : 12.0,
+					"id" : "obj-23",
+					"maxclass" : "codebox",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 111.0, 42.0, 631.0, 840.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-10",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 723.0, 14.0, 28.0, 22.0 ],
+					"text" : "in 2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 111.0, 14.0, 28.0, 22.0 ],
+					"text" : "in 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 111.0, 893.0, 35.0, 22.0 ],
+					"text" : "out 1"
+				}
+
+			}
+ ],
+		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-23", 0 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-23", 1 ],
+					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"source" : [ "obj-23", 0 ]
+				}
+
+			}
+ ],
+		"autosave" : 0
+	}
+
+}
