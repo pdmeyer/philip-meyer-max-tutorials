@@ -4,12 +4,12 @@
         "appversion": {
             "major": 9,
             "minor": 1,
-            "revision": 0,
+            "revision": 1,
             "architecture": "x64",
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 34.0, 100.0, 1444.0, 848.0 ],
+        "rect": [ 33.0, 93.0, 1307.0, 765.0 ],
         "openinpresentation": 1,
         "integercoordinates": 1,
         "boxes": [
@@ -102,7 +102,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 0,
+                            "revision": 1,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -513,7 +513,7 @@
             {
                 "box": {
                     "bgcolor": [ 0.168627450980392, 0.168627450980392, 0.168627450980392, 0.0 ],
-                    "color": [ 0.594473705410263, 0.720560630419913, 0.928309050695498, 1.0 ],
+                    "color": [ 1.0, 0.725490196078431, 0.003921568627451, 1.0 ],
                     "elementcolor": [ 1.0, 0.611764705882353, 0.0, 1.0 ],
                     "id": "obj-70",
                     "ignoreclick": 1,
@@ -529,7 +529,7 @@
                     "rightvalue": 1000,
                     "saved_attribute_attributes": {
                         "color": {
-                            "expression": "themecolor.live_value_arc"
+                            "expression": "themecolor.live_display_line_one"
                         }
                     },
                     "topvalue": 1000
@@ -649,7 +649,7 @@
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_linknames": 1,
-                            "parameter_longname": "envelope_rate[1]",
+                            "parameter_longname": "envelope_rate",
                             "parameter_mmax": 1.0,
                             "parameter_mmin": -1.0,
                             "parameter_modmode": 3,
@@ -709,14 +709,14 @@
             },
             {
                 "box": {
-                    "addpoints_with_curve": [ 0.0, 1.0, 0, 0.0, 0.49032258064516127, 0.4714285714285714, 0, 0.0, 1.0, 1.0, 0, 0.0 ],
+                    "addpoints_with_curve": [ 0.0, 1.0, 0, 0.0, 1.0, 1.0, 0, 0.0 ],
                     "bgcolor": [ 0.079348079365577, 0.07934804057877, 0.079348050547289, 1.0 ],
                     "classic_curve": 0,
                     "clicksustain": 0,
                     "domain": 1.0,
                     "id": "obj-12",
                     "legend": 0,
-                    "linecolor": [ 0.594473705410263, 0.720560630419913, 0.928309050695498, 1.0 ],
+                    "linecolor": [ 1.0, 0.725490196078431, 0.003921568627451, 1.0 ],
                     "maxclass": "function",
                     "mode": 1,
                     "numinlets": 1,
@@ -731,7 +731,7 @@
                             "expression": "themecolor.live_lcd_bg"
                         },
                         "linecolor": {
-                            "expression": "themecolor.live_value_arc"
+                            "expression": "themecolor.live_display_line_one"
                         }
                     },
                     "varname": "envelope"
@@ -843,7 +843,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 0,
+                            "revision": 1,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -1426,12 +1426,12 @@
                     "outlettype": [ "", "", "", "" ],
                     "patching_rect": [ 61.285714626312256, 19.0, 56.0, 22.0 ],
                     "restore": {
-                        "am": [ 36.759873519747075 ],
+                        "am": [ 0.0 ],
                         "crush": [ 0.0 ],
                         "drive": [ 0.0 ],
-                        "envelope": [ 1.0, 0.0, 1.0, 0.0, 1.0, 0, 0.0, 0.49032258064516127, 0.4714285714285714, 0, 0.0, 1.0, 1.0, 0, 0.0, "curve" ],
+                        "envelope": [ 1.0, 0.0, 1.0, 0.0, 1.0, 0, 0.0, 1.0, 1.0, 0, 0.0, "curve" ],
                         "envelope_rate": [ 0.017964071856287456 ],
-                        "rand_pos": [ 57.480314960629876 ],
+                        "rand_pos": [ 0.0 ],
                         "srr": [ 0.0 ],
                         "transpose": [ 0.0 ]
                     },
@@ -1446,8 +1446,8 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 23.5, 703.0, 105.0, 22.0 ],
-                    "text": "prepend name set"
+                    "patching_rect": [ 24.0, 703.0, 86.0, 22.0 ],
+                    "text": "prepend name"
                 }
             },
             {
@@ -1614,7 +1614,7 @@
                     "presentation_rect": [ 121.42857432365417, 55.000001311302185, 60.439563393592834, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
-                            "parameter_longname": "Transpose[2]",
+                            "parameter_longname": "Transpose[1]",
                             "parameter_mmax": 12.0,
                             "parameter_mmin": -12.0,
                             "parameter_modmode": 3,
@@ -1639,7 +1639,7 @@
                     "presentation_rect": [ 60.71428716182709, 55.000001311302185, 60.439563393592834, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
-                            "parameter_longname": "Rand Pos[2]",
+                            "parameter_longname": "Rand Pos[1]",
                             "parameter_mmax": 100.0,
                             "parameter_modmode": 3,
                             "parameter_shortname": "Rand Pos",
@@ -1664,7 +1664,7 @@
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_exponent": 2.0,
-                            "parameter_longname": "Crush[2]",
+                            "parameter_longname": "Crush[1]",
                             "parameter_mmax": 100.0,
                             "parameter_modmode": 3,
                             "parameter_shortname": "Crush",
@@ -1689,7 +1689,7 @@
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_exponent": 2.0,
-                            "parameter_longname": "AM[2]",
+                            "parameter_longname": "AM[1]",
                             "parameter_mmax": 100.0,
                             "parameter_modmode": 3,
                             "parameter_shortname": "AM",
@@ -1714,7 +1714,7 @@
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_exponent": 2.0,
-                            "parameter_longname": "Drive[2]",
+                            "parameter_longname": "Drive[1]",
                             "parameter_mmax": 100.0,
                             "parameter_modmode": 3,
                             "parameter_shortname": "Drive",
@@ -1738,7 +1738,7 @@
                     "presentation_rect": [ 0.0, 2.142857193946838, 60.439563393592834, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
-                            "parameter_longname": "SRR[2]",
+                            "parameter_longname": "SRR[1]",
                             "parameter_mmax": 100.0,
                             "parameter_modmode": 3,
                             "parameter_shortname": "SRR",
