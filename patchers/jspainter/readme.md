@@ -1,0 +1,1 @@
+To use the protoype, copy the entire `multislider` folder in this directory to the `Prototypes` folder in your `Max 9` folder.

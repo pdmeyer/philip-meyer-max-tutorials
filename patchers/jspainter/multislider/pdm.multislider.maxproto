@@ -1,0 +1,59 @@
+{
+	"boxes" : [ 		{
+			"box" : 			{
+				"maxclass" : "multislider",
+				"varname" : "multislider[1]",
+				"patching_rect" : [ 113.0, 153.0, 393.0, 580.0 ],
+				"candicane2" : [ 0.129411764705882, 0.129411764705882, 0.129411764705882, 0.15 ],
+				"contdata" : 1,
+				"ghostbar" : 26,
+				"orientation" : 0,
+				"thickness" : 50,
+				"setstyle" : 1,
+				"bgcolor" : [ 0.243137254901961, 0.243137254901961, 0.243137254901961, 1.0 ],
+				"signed" : 1,
+				"size" : 32,
+				"numinlets" : 1,
+				"slidercolor" : [ 1.0, 0.67843137254902, 0.337254901960784, 1.0 ],
+				"candicane3" : [ 0.294117647058824, 0.415686274509804, 0.717647058823529, 0.35 ],
+				"numoutlets" : 2,
+				"candycane" : 23,
+				"id" : "obj-62",
+				"parameter_enable" : 1,
+				"outlettype" : [ "", "" ],
+				"spacing" : 90,
+				"saved_attribute_attributes" : 				{
+					"bgcolor" : 					{
+						"expression" : "themecolor.live_lcd_frame"
+					}
+,
+					"slidercolor" : 					{
+						"expression" : "themecolor.live_display_handle_one"
+					}
+,
+					"valueof" : 					{
+						"parameter_invisible" : 1,
+						"parameter_longname" : "multislider[8]",
+						"parameter_modmode" : 0,
+						"parameter_shortname" : "multislider",
+						"parameter_type" : 3
+					}
+
+				}
+,
+				"jspainterfile" : "pdm.jspainter.multislider.js"
+			}
+
+		}
+ ],
+	"appversion" : 	{
+		"major" : 9,
+		"minor" : 0,
+		"revision" : 9,
+		"architecture" : "x64",
+		"modernui" : 1
+	}
+,
+	"classnamespace" : "box",
+	"preview_image" : [ 7013, "png", "IBkSG0fBZn....PCIgDQRA..AjH..DPhHX....vec+bu....DLmPIQEBHf.B7g.YHB..avQRDEDU3wY6cmGjbVeemG+ySe28bKM5FcgPHDfjvbIvHVb.rw1wwXXq0NFWlEmMq2bVUx5r1U1JdWRUIUsD6raRkXmpRbvj3jHGmDWqYUvfQNHiSPFjDWRfFARn6iQZzb22c+z6eHzPOdleO8b1OWue8m8Onlu0zi5O8uimees1111VM4fG4QdDc1ydVsrksL8DOwS3z+o..McoiaozwsTUaogKXKG+.MLsY0nPhLYxn65ttK8i9Q+HkKWtlUcA.3naXEIzu4c2gtxtiO1qMb9p5auur5asmQcwJKXoggD..dMskzR+C+mVhZIYjIc7G8oFP+vCkuIWUASS9ugA.7vtwUlvX.gjzcttTMwpIXiPB.36zUlXNNdmo4i1lqvuIAfOjyqRtUSpJBCHj...F47b1.BY5HkEKUgOvBaIpaWBgFDR.TmG7FZQ+B2d6tcY.3YvWYB..FwLI.pyy1SAcvyU1sKCz.21ZSp+82PqtcYDJPHAPcN0fUzoFrhaWFnAVZ6rmDMKrbS..vHBI.PvCOnDyYHj..9NiTz4GltQJvUR2bEBI.fuyqbxhpbEaii+RGuPSrZB1Hj..9N8myV+9+fgzHEFePgscM8+a+Y0NN.s0f4JbUgC.eqXQjVUWwTp2soCclgpzvkhBSObDXAfuUEao24hbjkmOQHA.lw9PWSZ8yeSsnqnyXJZDKkursdiyVVe8meHc7Ap51kGlCPHA.lQt0UmPe4ORWi60RDKpd+WYTc0KNt9zeyyqBUXoe76XiqAvLx8swLFGq6VipabkIZhUCluPHA.lQ5tUmuZL357NXfPB.LiznGp4nQ3wdNHfPB..XDabMPchZIEKJeC3ohHLSgPABI.pyCu0VoyzATGVtI..XDyj.nN69nE0.4FzsKCegO4M1pVYW7QHAc7NLPc5o2xpmdo8kNUb2WcZBIBAX4l..fQDR...iHj..yH4J478xT1RlaJPv+fPB.Li7Zmtnwwrsqo86v3v+fPB.Li7cesbZuGehAAUsqou1yOrN2HLShf.5Lc.XV4p5NlVQmQUrnQT9R1pmdKq9yQ.QPAmeM.Lqb39pnC2GcGtfJBI.vDbEcFUO7s1ltpEESIiYoxUkdm9Jq+18NpNBABgJDR.fwoiTQze1mpa0Ylw2OHV2hhq6XcozC+WeA06HzZRCKXiqAv37AVepIDPbYYRDQenqIcSthfahPB.LNKoMm6nbKsc53bgIDR.fwoQ8Sin7oFgJ71M..LhPB..XDmtIf57ouoV0m9lawsKCWU5D7cGw6gPBf5jJtTWFNYO.gQDR.Tm8elR5uaOi51kgq5FthD5ZWVB2tLfGAgD.0Yumnj16IJ41kgq5W4NamPBLFV7Q..XDgD..vHBI.v3TnrycOfFMNBVHj..iyAOmy6ISO8VtIUIvKfPB.LNu3wKpe7gKLoi8xmnn9gu0jOFBlnyzAfI0MrhDZ8KNtRFyRkpTSG8hUz9NYQYymXDpvQfE.SpW8zkzqd5v8wAFDR.DZkJlkt+MmQaZ4IUp3RUskN0fUzSt+b538S2mCWBgD.gPVR5q9.KPa4JRNgw93aJi97auOczKRPAXiqABkttkEeRCHjjREOhdvsjoIWQvqhPBfPnU1kyKhvpVP7lTk.uNBI.BghEoAceNmGFgHDR...iHj...FwoaBnNerqKs93aN32Y55LMe+PL0PHAPcVTaQ0FWJ8RAfKiPBf5bz9pn+kCk2sKi4cKuin5ZHLDSADR.Tmcc3BZWFtb6BR94t9LDRfoDVXR..XDgD..vHBI.BgJW04666xUaREB77Hj.HD5H847k22Q5itOGtDBI.Bgd6KT13o3p+rU0+vqjsIWQvqhNSGPHUDKo6bcoz0urDi0OIN8PU0O3f4zPE3iEvkPHA..LhmSBf.jqaow0su1TpizQTMI0eVasq2NuNFcZNLCQHAP.wCr4L5+58z4Dd8+iasU8e+I6W69XEcgpB9crw0.A.Qrj9OeGsOoiEKpk9EMLFPiPHAP.vhZMpZKk4+47UtPVz.LyPHAP.P7nNOdrnVpAMiNfIEgD..vHBI..fQrPk.04CbUozOyUm1sKioszwYsjv7CBI.pyZ6Nlt6M3+BI.luPHAPctvHU0AOWI2tLl1hGU5pVDMQHL2iPBf5ri2Hu1wa3+ZeoWQmQ01+bKwsKCD.wFWC..iHj...FQHAP.PkFzo4rsqIatumwL.gD.A.8k0VEJaNE3jCvs.KlYHj.H.nhsze+9F033+s607X.NgS2DP.w2X2ini1eE89WaR0dpHpVMo9yUU+vCUP64DbMgiYF5Lc..vHlIAv7fMs73ZCKNgRE2RkpTSGq+xZumnDadL7cHj.XN1i9Q6R2yjb0dbfyTR+F+SWTEqPRA7OXiqAlCciqLwjFPHIc8KOg9vaj6EJ3uPHAvbnqYIwcb7MtTmGGvqgPBf4Poi67+jJUCFGvqg+hEXNTM1tADvPHA..LhS2DPct4UkP2xpRMi++eSKmd5.BVHj.nNaZ4IzCcKs51kAfmAgD.0oPYoAxUcF++e53QTJ52zH.gPBf5r88Mp1tCWTdMxuvs0l9b2daygUDf6hMtF..FQHA..LhPBf4PM5B7qJ2vevmgPBf4PmaXm6.bma3Y9lhC3FHj.XNzO9HEzEyN4AAEJaqu+aluIWQ.yNb5l.lCksTM8K+s6SO7VaSaXwwUxXRkqJcrKVV+c6cTcpAoWSC+E5Lc..vHlIABjrjzFVRbsz1hpnQsT1h15fmqrFpfsaWZ.9JDRf.m1RZo+vGbgZiKc72iRkpTSekcNnd5Cx9B.LUwFWi.mG9VaaBADRRIhYoeq6oC0ZBt1L.lpHj.ANa4JLeSrlLdDsgFz83.v6gPBD3jIgy+YcFlIAvTFgDHzwRDR.LUQHA..LhS2DBct00jTKnkI+6G0SukUO8VtIWQ.dWDRfPm6eysXbrGe2CSHAPcX4l..fQLSBD57nO0.5e8HElzwpTkaoFf5QHABcJWolJVgv.foBVtI..XDgDHvwtAc+MZNb.ScDRf.m9LzzelpiCf2CgDHv4G3vs75wtXY8Vmmi3JvTEabMBbd5ClWYRDQehMmQKqiXJhkT1R15UOUI80d9gY4l.lFnyzA..iXlDvSHVDoU0ULkJtkpZKc1gqpgoKxA35Hj.tt69pSquvc2tZOczwdMa6Z5odib5q7CGhkGBvEwFWCW0BxDQ+Ne3NGW.gjTjHV5isoVzGeSlumk.v7OBIfqZKqHghG0b+c3VVs4tLG.l+QHAbUskx4+Dr8FLN.lew+BDtJ5Qb.daDR...i3zMAOs1SEQ21ZR1z94cpAqpSMXkl1OO.uNBIfm1U1cb8UdfE1z94836dX8M+Ii1z94A30wxMA..iXlDvS6fmsn98elAaZ+7FLOOk2.0iPB3oUrpzwGfq1a.2BK2D..LhPB3pZz8xTMt2l.bUDR.W0f4cdojFHG6Q.fahPB3pdkSVRYKZNH3GejBMwpA.+zHj.tpQKUSeou2E06z23aonCmup9FuvvZmGxbqHE.y+nyzAOizwsT52soCMbAaweXB393HvhYkXQjZMYDYIoQKZqxyhsPHe4ZJeYhF.7RHj.yHsjvReg6tC8At5zi0OHrsqo8bhh5wd1gzEFkmsAff.1SBLi7qcWcnO3FyLtFFTjHVZqqIk9ctuNcwJC.ykHj.yH245RYbr22JSnVRPmh.HHfPBLsYIoNRa9OcrrrTWYhZbb.3ePHAl1rlRSRfMfFHHfPB..XDmtILuXEcDUQ8gaKwf4s0PEXVP.WFgDXdwW8A61sKgYD5Lc.iGK2D..LhYRf4EO1OXP0WV+2CT2oFz+Uy.ymHj.yKd0SWjOvEH.fkaB..FQHAl1lZcKNe3QaB.S.gDXZqljiMJHIoQJPGkCHHfPBLi7RGunwwdqyWVCQHAPf.gDXF4O94FRG3Lklvqe79qneumd.Wnh.v7A5LcXVYwsFQKrkKcY9MbAac5g3DMADjvQfEyJmeTac9QYok.BpHj.iyG8ZSqO4M1pVdGQUzHVJe4ZZ+moj9ZO+P7bO.DBQHAFy1txj52995ZbuVhXVZaqKktptioG5u5BpbUVcRfvD13ZLl66ZyXbrk1QLs4kGuIVM.vKfPBLltaw4tIW2sR2lCHrgPBLlF0w4hvCQMPnCgD..vH13ZLkEKhkRFKXOchJUqI1adf2CgDXJ6K9A6TewOXmtcYLuhNSGv3wxMA..iXlDXJ6oeyb5MN6DuulBR5o2xtcI.3oPHAlxd4SVTe+2LuaWF.nIhkaB..FQHAlFB1mrI.LQDRfwjqjy2lqMZb.D7PHAFyqeZyaZaU6ZA9MsF.SDgDXL+8u7n5UO0DaKoUpVS+wO2PpurLSBfvF5LcXBV+hhok2QTEKZDkqns5o2xZf7DP.DFwQfESvaegJ5suPE2tL.fG.gDgPqeQw0Ccysn0tv3JdTohUpo257k025kFkdTM.FGBIBYVdGQ0W+S0sREe7Gm00u3D51WaJ8YdhyqQKwJPBfKgMtNj491X5IDPbYKnkn5tVe5lbEA.uLBIBYVV6NO4wk1NceN.7dHjHjoQcWtn7WD.nN7QB..vHBI..fQb5lv37e380p9XWeF2tLbMaeuY012GclNfKiPBLNohaoTwCuadcp3tcE.3sPHAFmCblhNdQ+Ezs+yvkXHP8Hj.iyqbpR5O+eaD2tL.fGAabM..LhPB..XDgDgLEp378xTgxbuMAf2CgDgL8zqyaJciFG.gKDRDx7LuYN8ZSR2mSRZWucdsmiO4iAfvI5LcgPQrjt4UkTqYAwThXVi0OIdsSyw+D.iGgD..vHdNIBA5LcD8faoEs9EGWIhZoRUs06zWE8ce0r5h4n2UC.yXlDAbYhaom3ytHsrNl32G3BiTQet+l9zPEHn..SN135.telqN8jFPHIsn1hoOzFoSzA.yHjHfakc47k02J6hUbD.lQHQ.WrFzJ5hweA..GvGQ...iHj...FwBRGxss0kRW0hnS6bYO4qmU63Mx61kAfmAgDgbckIp5JS3sSz8Sa2GsfaWB.dJDRDxc5AqnCwk52XNZeUb6R.vSgPhPtW9jE0evNGxsKC.3QwFWC..iHj...FQHQ.WoFzI5Zz3.HbiPh.tizmyaJ8QXiZAfCHjHf64ObAcvyM4MSn2oux5Y6IWSth.feBWU3g.IhJcOaHsV+hhqDwrT4p0zQtPYsyCkWEXhD.vADR...i34jHfJVjK0KItlkDWIiYoJ1RG6hUzy1SNksDeu..L0PHQ.TDKo+2O3B06akImvX+72TK5yu89zvzM5.vT.abc.zst5jSZ.gjzJ5Ll9YuN5Fc.XpgPh.nqrammfH25q.XphPh.nDQc9s03Qcta0A.bYDR...iHj...FwoaJD55VVB869Q6xsKCOom6sxqccXZ7P.WFgDgPKtsn5t2.mvoIyw5ur10gc6p.v6fPhPngyWUmdnptcY3IcgQ32K.0iPhPn8cxR5+w+7.tcY..e.13Z..XDgD..vHBIBfpX67E3WkpbA+AfoFBIBfN4.N2jHN4fzDI.vTCgDAPuv6TPG0PaKcn7U0NNP9lbEA.+JZ5PATslvROvVZQWyRe29IQUoi2eE8cesrpWNlm.XJhi.a.0nkpou0dF0sKC.3yQHQ.z0tz3ZiKItRmHhJWslN4.UzKdrhh8qF.SWDRDv7Eu2NzO2lZYBu9ae9x5W66zmxUljB.L0wFWGfrgEGeRCHjjV+hiq6eyYZxUD.76HjH.YiK04NN20trDMoJA.AEDRDfjJtycbtjzQ5.vzDgDAH0X6F.vbLBI..fQb5lBQV0Bhoe4s0taWFdZ64DEzdOQI2tL.7LHjHDYEcFSOzszpaWFdZEpXSHAPcHjHDob0ZZzh1tcY3oUXxuxq.BsHjHDYuGun9heu9c6x..9Hrw0..vHBI..fQDRDfzfFRmpxCRA.llHjH.4bC6bGmq2QXSqAvzCgDAHu3wJpyNzjGTTths1w9y1jqH.32woaJ.oTUoe0uSe5gu0V00trjJYTop0jN4.U02deipC2G81Z.L8P6KE..FwLIBXVXlHZCuaWoqx61U5dmKxLH.vLCgDAHOzM2h972Q6JZjwekf+hGqf9s+d8qxru0.XZhMtNf3J5Ll9k11DCHjj15ZRoOwVl7NVG.fSHjHfXSKOtrrL2Tg1xJR1DqF.DTPHQ.QlFzU5xPmKE.y.DR...iHj...FwoaJjXwsESehMmwsKCOud5sr5oWZpD.WFgDgDqdAwzW3d5zsKCOuGe2CSHAPcX4l..fQLShPh8chh5KQWoqgpTkaoFf5QHQHgcsZpXE9.P.L8vxMA..iHjHfnlb9goqQcsN.fICgDAD8MZUGG+hY418C.SeDRDPrmSTT8m0bPwy7l4ZhUC.BJhtpUspG0sKBL6UwV5kNVQsz1hp1SYoHVVpXkZ5nWrh9S10P5ENZQ2tDAfODclN..XDGA1.hXQjVYWwT53VppszYGtpFt.6CA.lcHjH.3ttpT5+181g5HczwdMa6Z5YNXd8XO6fhmOL.LSwFW6y0QJK8k+vcNt.BIoHQrzG45xvk5G.lUHjvmaKqHoRF27ai25ZR0DqF.DzPHgOWaob9sv1Rxaw.XliOAwmyg1Z8TZb..mPHA..LhS2T.WqIszssljtcY3abpAqpSMXE2tL.7LHjHfaMKLt9JOvBc6xv23w28v5a9SF0sKC.OCVtI..XDyjHf6sOeY869TzQ5lpFLOOk5.0iPh.thUpoiOfyWi3..lvxMA..iHjvmytAsbN6ZbwMAfYNBI74ZzZnyZrCfYCBI74d0SURi3vUB9ye3BMwpA.AMDR3ykqbM8k9dWTG4BkG2qORAa836dX8LGLuKUY.HHfNSW.R53Vi0zgFtfs3MV.LawQfM.HULoLIhnp1WZOHZvdYC.LkQHgO1FWRb8acucpqdwwG60xVzVe2WMq9KdgQXlD.XVi8jvmJYLK8+59Wv3BHjjZIYD8Y2Za592bKtTkAffDBI7ottkEWKnknFG+NWGcjN.L6QHgOUWYLGPbow4sV.L6wmj3W0vmjZ1QB.L6QHA..LhS2T.UhXQzp6x4kjBSzf4s0PEXVX.WFgDATqdAwzeyirD2tL7cnyzALdrbS..vHlIQ.0oGrh9idtgb6xv24TCRCZBndDRDPkqjs9IGqnaWF.vmikaB..FQHgekkUi9OnoTF.HXiPBeJmZzPRRiTjNRG.l8Hjvm5MNaIkqj4ffWh8i..yAHjvmJaoZ5Q+mGPCja7mFmZ0poc1SN8cdkrtTkAffD5Lc9bQsjVYWwTlDWpizctgqvSLL.lyvQf0mqZMoi0eE2tL.P.EgD9LKp0n5W8eW658cEITqIiH6ZR8NRU8judVVhI.LmiPBeDKI8X2+Bz5+o5FcqdAwzu9GnCUnRM8j6Om6Tb.HPhMt1GYsKL1DBHp28swzMwpA.gADR3izcqNe0e2sCsyT.fYBBI7QZzyPcjH7TVCf4VDR...iXiqCTpojwX1DyFUpVSU4wLAXLDRDfrz1ioc9quL2tL70nyzALdrbS..vHlIQ.xP4qpuwKLhaWF9Z8zaY2tD.7THjH.IeYo+uuNOLc.XtCK2D..LhPB..XDgD9HYcnICIIkktQG.liQHgOxguPYG6Fcu1ooazAf4VDR3iTnhzevNGREJOwfh297k478Cf4bzY57gZKokt1klPslJhpVsl5cjppmdKKdiD.y03Hv5CMRwZ5EONKsD.l+QHgOPxXV5ybyspaY0ITaIinZR5BiVUe+2Lud1dx61kG.BvHjvG3K+g6R205SMtWaMKLttkUmRIiYocb.d.5.v7C13ZOttRGYBAD06Sr4LMwpA.gMDR3wsj1ctaysz1Yxf.X9CgDdbQaP6gHJuCBf4Q7QL..vHBI..fQrf19bYRXom7+xRb6xHvX66Mq1993IWG3xHjvmKhkk5JiyatMl5RE2sq..uEBI74JUol9GekrtcYDXr+yTxsKA.OEBI74JUsl9y9WG1sKC.DPwFWC..iHj...FQHgGWgJNeAfWnLWP3.X9CgDdbmn+JN1VR6o2xMwpA.gMDR3wU1V5O84GV11SbFCClqp9K92XSqAv7GNcS9.63.4zqbxh5lVUR0VxHxtVM0WVa8BuSAksDK2D.l+PHgOwoGppN89ouQ.flKBI7vt2MjV29ZSpNRGQ11R8mqp14gxq8dBdfu.PyAgDdTe92ea5yt01lvq+yd8sneumd.8LGj1VJ.l+wFW6AEOhzm7Faw33elat0lX0.fvLBI7fVbaQUx3leqYkcwD.APyAgDdPwZP6nqQiC.LWgPB..XDgD..vHVbaep+7Oc2tcIDH8judVsi2fSNFvkQHgO0FWZB2tDBj18QK31k.fmBgD9T+KGhus67gi1WE2tD.7THjvm5+4SMfaWB.HDfMtF..FQHA..LhPBOnRMnazUtJWO3.n4fPBOndGopicitCeA5Fc.n4fPBOH6ZxXGmqR0Z5w28HM4JB.gUb5l7n9mdsb5Pmuhts0jTcj1R0jk5Oqsdt2JmN9.Uc6xC.gDDR3gcfyVRG3rzfg.f6gPhlrk2QTcOaHsVTqQkkpoQJTS68jE0KeRBC.f2CgDMQaZ4w0+mGbgSnWQ7Y2Za5u7EFVOwKNpKUY..SN135lnGYqsYrYB8vasMkNN8IB.3sPHQSzUsn3FGKdTKsxNi1DqF.fFiPhln3MnixkHFuc..uE9TI..XDgD..vHNcSdH+hu+1zP4Mecbf4eO2akW65vz3g.tLBI7PtoUkzsKgPui0eYsqC61UAf2AgDdHG6hkU9xbCu5ltvHbkm.TOBI7PdrmcHtFN.fmBabM..LhPB..XDgDMQMpixUwl8i..dKDRzDcpAqXbLa6Z5zNLN.fafPhlnsu2rx1vrEdx8mUiTjYR..uEqsssswmL0DsokGWejqMi5tknJRDoQJXq8b7h5oOXdwpMA.uFNBrMY6+Lk09OyPtcY..LkPHw7jDQkt80lRKqinJpkkxUxVu9YJoizG66..7OHjXdvBxDQe8OU2ZEcNwe89D+jQze4tGwEpJ.foO1354Aelao0IMfPR5gu0V0hakesC.+A9zp4AabIILNVjHV5pWr4NTG.fWBgDyCR0fdUcJC84Z..uF9zJ..XDgD..vHNcStf6cCoz5WD6KgWzdNQAs2Sv00NvkQHgK3NVWZcGqysqBLYJTwlPBf5PHgKHaIaUpB2AGdQEJ61U.f2BgDtfu5NGR67P4c6x..ngXiqA.fQ++AeGX.x139iO......IUjSD4pPfIH" ]
+}
