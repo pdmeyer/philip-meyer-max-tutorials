@@ -1,0 +1,125 @@
+allocate(on, duration, voices, stealing, buf) {
+	// INTERNAL BUF
+	// chan 0 = gate phase in samples
+	// chan 1 = duration in samples (used downstream to normalize the phase)
+	// chan 2 = gate off time (in samples relative to this patcher's start time);
+	// chan 3 = start time
+	Data internal(4, 4);
+
+	// next slot to allocate an event to
+	History next_voice;
+
+	stealing_ = bool(stealing);
+
+	//ensure a pulse
+	new_event = (delta(on) == on) && (on > 0.5);
+
+	now = elapsed();
+
+	// update active events
+	for(i = 0; i < voices; i += 1) {
+		
+		event_off_time = peek(internal, i, 2);
+		
+		// if this voice is inactive
+		if(event_off_time == 0) {
+			//if we don't have a next voice, allocate this on
+			if(next_voice == -1) {
+				next_voice = i;
+			}
+		} 
+		
+		// if this voice's event is done, clean it up
+		else if(event_off_time <= now) {
+			poke(internal, 0, i, 0);
+			poke(internal, 0, i, 1);
+			poke(internal, 0, i, 2);
+			poke(buf, 0, 0, i);
+		} 
+		
+		// if the event is in progress...
+		else {
+			// increment samples ramp
+			phase = peek(internal, i, 0) + 1;
+			poke(internal, phase, i, 0);
+		
+			// calculate normalized ramp for external consumption
+			duration = peek(internal, i, 1);
+			poke(buf, phase / duration, 0, i);
+		}
+	}
+
+	// if voice stealing is needed, steal a voice
+	if(new_event && stealing_ > 0 && next_voice == -1) {
+		
+		stolen = -1;
+		
+		// mode 1 (steal earliest)	
+		if(stealing_ == 1) {
+			// find the voice that started its note first
+			earliest_time = now;
+			for(i = 0; i < voices; i += 1) {
+				start_time = peek(internal, i, 3);
+				if(start_time < earliest_time) {
+					earliest_time = start_time;
+					stolen = i;
+				}
+			}
+		} 
+		
+		// mode 2 (steal latest)
+		else if(stealing_ == 2) {
+			// find the voice that started its note first
+			latest_time = 0;
+			for(i = 0; i < voices; i += 1) {
+				start_time = peek(internal, i, 3);
+				if(start_time > latest_time) {
+					latest_time = start_time;
+					stolen = i;
+				}
+			}
+		} 
+		
+		// mode 3 (steal most advanced)
+		else if(stealing_ == 3) {
+			highest_phase = -1;
+			for(i = 0; i < voices; i += 1) {
+				phase = peek(buf, 0, i);
+				if(phase > highest_phase) {
+					highest_phase = phase;
+					stolen = i;
+				}
+			}
+		}
+		
+		// end the event at the stolen voice and set next_voice to its index
+		poke(internal, 0, stolen, 0);
+		// (no need to update the other channels of internal. they will be overwritten in the next block)
+		poke(buf, 0, 0, stolen);
+		next_voice = stolen;
+		
+	}
+
+	// if there is a new event, allocate it
+	// if there are no available voices (next_voice == -1), skip
+	if(new_event && next_voice != -1) {	
+		
+		dur = mstosamps(duration);
+		
+		//store duration
+		//duration = max(1, mstosamps(in2));
+		poke(internal, dur, next_voice, 1);
+		
+		//store end time
+		off_time = now + dur;
+		poke(internal, off_time, next_voice, 2);
+		
+		//store start time
+		poke(internal, now, next_voice, 3);
+
+		next_voice = -1;
+	}
+	
+	// omitting the return causes a different compiler error
+	return next_voice;
+}

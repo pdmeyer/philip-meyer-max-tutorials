@@ -2,9 +2,9 @@
 	"name" : "signal-polyphony",
 	"version" : 1,
 	"creationdate" : 3841646380,
-	"modificationdate" : 3841646450,
+	"modificationdate" : 3842398969,
 	"viewrect" : [ 25.0, 119.0, 300.0, 500.0 ],
-	"autoorganize" : 1,
+	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
 	"autolocalize" : 0,
@@ -14,6 +14,11 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"toplevel" : 1
+			}
+,
+			"voice_allocator.genexpr.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
 			}
 
 		}
@@ -26,6 +31,14 @@
 ,
 			"voice_reader.gendsp" : 			{
 				"kind" : "gendsp",
+				"local" : 1
+			}
+
+		}
+,
+		"other" : 		{
+			"voice_allocator.genexpr" : 			{
+				"kind" : "genexpr",
 				"local" : 1
 			}
 
